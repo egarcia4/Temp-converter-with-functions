@@ -48,8 +48,7 @@ do {
     if (comp > 20) {
 
         alert ("I went over 20. You win.")
-        h++
-        break;
+        
 
     } else {
 
@@ -65,7 +64,7 @@ do {
 
             console.log(hum);
 
-            var humnum = prompt(`Your current number is ${hum}. Would you like another number? (y or n)  The computers number was ${comp}. If you go over 20, you will lose`); 
+            var humnum = prompt(`Your current number is ${hum}. \n Would you like another number? (y or n)  \n The computers number was ${comp}. \n If you go over 20, you will lose`); 
 
             if (hum >= 21){
                 humnum = "n";
@@ -76,8 +75,8 @@ do {
 
         if (hum > 20) {
             alert ("You went over 20. I win")
-            c++
-            break;
+            
+            
         } else {
 
         alert (`Your final number is ${hum}`);
@@ -85,8 +84,19 @@ do {
 
     }
     
+    if (comp > 20) {
+        
+        alert(`My number was ${comp}. Since I went over 20, you win. `);
+        h++
 
-    if (20 >= hum > comp) {
+
+    }else if (hum > 20){
+
+        alert(`Your number was ${hum}. Since you went over 20, I win. `);
+        c++
+    
+
+    }else if (20 >= hum > comp) {
 
         alert(`The score was Human: ${hum} to Computer: ${comp}. You win. `);
         h++
