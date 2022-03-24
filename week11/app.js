@@ -112,6 +112,7 @@ function playAgain() {
 
         }
         alert(`Final score was Human: ${h} to Computer: ${c}`)
+        return h,c 
     }
 
     compareNumbers(greeting(askName()),humanTurn(),computerTurn())
